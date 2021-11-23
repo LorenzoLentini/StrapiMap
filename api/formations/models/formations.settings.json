@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Formations",
+  "info": {
+    "name": "Formations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ville": {
+      "type": "string",
+      "required": true
+    },
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "missions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "missions.missions",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "alternance": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "lvl": {
+      "type": "enumeration",
+      "enum": [
+        "aucun",
+        "Niveau4",
+        "Niveau5",
+        "Niveau6"
+      ],
+      "default": "aucun",
+      "required": true
+    },
+    "lien": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "default": "#"
+    },
+    "duree": {
+      "type": "string",
+      "required": true
+    },
+    "learners": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

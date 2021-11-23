@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_missions_missions",
+  "info": {
+    "name": "missions",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mission": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
